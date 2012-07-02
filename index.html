@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>metro开发</title>
+    <link type="text/css" rel="stylesheet" href="css/MetroJs.css"/>	
+</head>
+
+<body>
+<div class="tiles">
+    <div class="live-tile mango">
+        <div>test 1</div>
+    </div>
+    <div class="live-tile red" data-mode="flip">
+        <div>test 2</div>
+        <div>test 2 back</div>
+    </div>
+    <div class="list-tile blue">
+        <ul class="flip-list fourTiles" data-mode="flip-list">
+            <li><div></div><div style="background-color:Orange;"></div></li>
+            <li><div></div><div style="background-color:Blue;"></div></li>
+            <li><div></div><div style="background-color:Red;"></div></li>
+            <li><div></div><div style="background-color:Green;"></div></li>
+        </ul>
+    </div>
+</div>
+<div class="appbar">
+			 <nav>
+				<ul id="menu" class="appbar-buttons">
+					<li>
+						<a href="/" class="home"><img src="images/1pixel.gif" alt="home" /></a>
+						<span class="charm-title">Home</span>
+					</li>
+					<li>
+						<a href="/about" class="about"><img src="images/1pixel.gif" alt="about" /></a>
+						<span class="charm-title">About</span>
+					</li>
+					<li>
+						<a href="#" class="twitter" target="_blank"><img src="images/1pixel.gif" alt="twitter" /></a>
+						<span class="charm-title">Twitter</span>
+					</li>
+				</ul>
+			</nav>
+			<a class="etc">&bull;&bull;&bull;</a>
+			<ul class="theme-options clear">
+				<li>
+					<a class="accent blue" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent brown" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent green" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent lime" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent magenta" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent mango" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent pink" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent purple" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent red" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent teal" href="javascript:;">&nbsp;</a>
+				</li>
+			</ul>
+			<ul class="base-theme-options clear">
+				<li>
+					<a class="accent light" href="javascript:;">&nbsp;</a>
+				</li>
+				<li>
+					<a class="accent dark" href="javascript:;">&nbsp;</a>
+				</li>
+			</ul>
+		</div>
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    	<script type="text/javascript" src="js/MetroJs.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".live-tile,.flip-list").liveTile();
+                $(".appbar").applicationBar();
+            });
+	    </script>
+</body>
+</html>
